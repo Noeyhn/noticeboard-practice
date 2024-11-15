@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "datasource",
+      "type": "com.github.noticeboardpractice.properties.DataSourceProperties",
+      "sourceType": "com.github.noticeboardpractice.properties.DataSourceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.github.noticeboardpractice.properties.DataSourceProperties"
+    },
+    {
+      "name": "datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "com.github.noticeboardpractice.properties.DataSourceProperties"
+    },
+    {
+      "name": "datasource.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.github.noticeboardpractice.properties.DataSourceProperties"
+    },
+    {
+      "name": "datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "com.github.noticeboardpractice.properties.DataSourceProperties"
+    },
+    {
+      "name": "datasource.user-name",
+      "type": "java.lang.String",
+      "sourceType": "com.github.noticeboardpractice.properties.DataSourceProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,13 @@
+Server:
+  port: 8090
+Spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+datasource:
+  driver-class-name: ${DB_CLASSNAME}
+  username: ${DB_USERNAME}
+  password: ${DB_PASSWORD}
+  url: ${DB_URL}
+  secret-key: ${DB_SECRET_KEY}
