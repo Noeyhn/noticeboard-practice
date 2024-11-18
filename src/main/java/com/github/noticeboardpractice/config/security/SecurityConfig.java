@@ -21,10 +21,12 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         return http.csrf(AbstractHttpConfigurer::disable)
-                .formLogin(Customizer.withDefaults())
+                .formLogin(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorizeRequest ->
                         authorizeRequest
-                                .requestMatchers(AntPathRequestMatcher.antMatcher("/api/**")).authenticated())
+                                .requestMatchers(AntPathRequestMatcher.antMatcher("/api/sign")).permitAll()
+                                .anyRequest().permitAll()
+                )
                 .headers(httpSecurityHeadersConfigurer ->
                         httpSecurityHeadersConfigurer
                                 .frameOptions(HeadersConfigurer
