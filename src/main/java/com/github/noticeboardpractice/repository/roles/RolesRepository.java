@@ -1,4 +1,4 @@
-package com.github.noticeboardpractice.repository.Roles;
+package com.github.noticeboardpractice.repository.roles;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NoticeBoard-Practice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/NoticeBoard-Practice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.NoticeBoard-Practice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.NoticeBoard-Practice.main.iml" />
     </modules>
   </component>
 </project>

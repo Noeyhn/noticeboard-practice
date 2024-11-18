@@ -23,7 +23,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 @EnableJpaRepositories(
         basePackages = {"com.github.noticeboardpractice.repository.member", "com.github.noticeboardpractice.repository.memberPrincipal",
-                        "com.github.noticeboardpractice.repository.Roles"},
+                "com.github.noticeboardpractice.repository.roles"},
         entityManagerFactoryRef = "entityManagerFactoryBean1",
         transactionManagerRef = "tmJpa1"
 )
@@ -49,7 +49,7 @@ public class JpaConfig {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource);
         em.setPackagesToScan("com.github.noticeboardpractice.repository.member", "com.github.noticeboardpractice.repository.memberPrincipal",
-                            "com.github.noticeboardpractice.repository.Roles");
+                            "com.github.noticeboardpractice.repository.roles");
 
         JpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(adapter);

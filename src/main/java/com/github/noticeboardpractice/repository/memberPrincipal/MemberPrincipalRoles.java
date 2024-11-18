@@ -1,6 +1,6 @@
 package com.github.noticeboardpractice.repository.memberPrincipal;
 
-import com.github.noticeboardpractice.repository.Roles.Roles;
+import com.github.noticeboardpractice.repository.roles.Roles;
 import jakarta.persistence.*;
 import lombok.*;
 

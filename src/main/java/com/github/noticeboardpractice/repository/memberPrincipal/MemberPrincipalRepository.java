@@ -12,4 +12,5 @@ public interface MemberPrincipalRepository extends JpaRepository<MemberPrincipal
     @Query("SELECT mp FROM MemberPrincipal mp JOIN FETCH mp.memberPrincipalRoles mpr JOIN FETCH mpr.roles WHERE mp.email = :email")
     Optional<MemberPrincipal> findByEmailFetchJoin(String email);
 
+    boolean existsByEmail(String email);
 }

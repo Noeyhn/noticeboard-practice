@@ -1,4 +1,4 @@
-package com.github.noticeboardpractice.repository.Roles;
+package com.github.noticeboardpractice.repository.roles;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Table(name = "Roles")
+@Table(name = "roles")
 public class Roles {
 
     @Id
@@ -17,7 +17,7 @@ public class Roles {
     @Column(name = "role_id")
     private Long roleId;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = false, length = 50)
     private String name;
 
 }
