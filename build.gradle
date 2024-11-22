@@ -24,6 +24,10 @@ repositories {
 }
 
 dependencies {
+
+    //JAXB API 의존성 추가
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+
     runtimeOnly 'mysql:mysql-connector-java:8.0.26'
 
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'

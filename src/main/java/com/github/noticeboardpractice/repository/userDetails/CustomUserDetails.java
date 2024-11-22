@@ -21,10 +21,6 @@ public class CustomUserDetails implements UserDetails {
     private String password;
     private List<String> authorities;
 
-    public Long getMemberId() {
-        return memberId;
-    }
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return authorities.stream().map(SimpleGrantedAuthority::new).collect(Collectors.toList());

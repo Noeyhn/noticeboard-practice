@@ -1,6 +1,5 @@
 package com.github.noticeboardpractice.config.security;
 
-import com.github.noticeboardpractice.properties.DataSourceProperties;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -14,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Base64;
 import java.util.Date;
+import java.util.List;
 
 @Component
 @RequiredArgsConstructor
@@ -30,9 +30,10 @@ public class JwtTokenProvider {
         return request.getHeader("X-AUTH-TOKEN");
     }
 
-    public String createToken(String email) {
+    public String createToken(String email, List<String> roles) {
         Claims claims = Jwts.claims()
                 .setSubject(email);
+        claims.put("roles", roles);
         Date now = new Date();
         return Jwts.builder()
                 .setClaims(claims)
